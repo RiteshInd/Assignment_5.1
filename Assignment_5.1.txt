@@ -57,9 +57,3 @@ Our test statistic is not less than -2.32, so it does not fall into the critical
 
 Therefore, we fail to reject the null hypothesis that the true proportion of students admitted to graduate school is less than 40% and say that the observed data are consistent with the officer's claim at the alpha = 0.01 significance level. 
 
-# Hypothesis test plot based on normal and t.dist from HH package
-
-library(IPSUR) 
-library(HH)
-temp <- prop.test(1755, 1755 + 2771, p = 0.4, alternative = "less", conf.level = 0.99, correct = FALSE) 
-plot(temp, "Hypoth")
